@@ -1,4 +1,4 @@
-package com.egayush.egdil_desktopiconlock;
+package com.egayush.eglil_launchericonlock;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,12 +6,9 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuInflater;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.Checkable;
 
-import static com.egayush.egdil_desktopiconlock.R.id.checkBox;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class MainScreenActivity extends AppCompatActivity {
 
@@ -30,6 +27,12 @@ public class MainScreenActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+
+        AdView adview = (AdView) findViewById(R.id.adView);
+        AdView adview2 = (AdView) findViewById(R.id.adView2);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

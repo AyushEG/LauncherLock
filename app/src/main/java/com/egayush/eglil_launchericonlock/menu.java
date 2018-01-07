@@ -1,4 +1,4 @@
-package com.egayush.egdil_desktopiconlock;
+package com.egayush.eglil_launchericonlock;
 
 /**
  * Created by Ayush-EG on 6/25/2017.

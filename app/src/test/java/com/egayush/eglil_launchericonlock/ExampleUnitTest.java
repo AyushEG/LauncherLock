@@ -1,4 +1,4 @@
-package com.egayush.egdil_desktopiconlock;
+package com.egayush.eglil_launchericonlock;
 
 import org.junit.Test;
 

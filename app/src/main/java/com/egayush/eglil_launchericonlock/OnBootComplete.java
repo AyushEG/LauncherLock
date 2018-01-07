@@ -1,4 +1,4 @@
-package com.egayush.egdil_desktopiconlock;
+package com.egayush.eglil_launchericonlock;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

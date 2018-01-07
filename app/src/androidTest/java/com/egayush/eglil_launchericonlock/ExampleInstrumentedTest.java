@@ -1,4 +1,4 @@
-package com.egayush.egdil_desktopiconlock;
+package com.egayush.eglil_launchericonlock;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
