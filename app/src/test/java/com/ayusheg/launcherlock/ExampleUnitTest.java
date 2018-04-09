@@ -1,4 +1,4 @@
-package com.egayush.eglil_launchericonlock;
+package com.ayusheg.launcherlock;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.egayush.eglil_launchericonlock;
+package com.ayusheg.launcherlock;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

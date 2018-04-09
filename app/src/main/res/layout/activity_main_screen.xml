@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.egayush.eglil_launchericonlock.mainScreenActivity"
+    tools:context="com.ayusheg.launcherlock.mainScreenActivity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
@@ -13,7 +14,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EG Launcher Icon Lock"
+        android:text="LauncherLock"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -48,7 +49,7 @@
         android:layout_marginRight="12dp"
         android:layout_marginStart="12dp"
         android:checked="false"
-        android:text="Lock Desktop"
+        android:text="Lock Icons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -101,5 +102,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
+
 
 </android.support.constraint.ConstraintLayout>

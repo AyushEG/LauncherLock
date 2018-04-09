@@ -1,13 +1,13 @@
-package com.egayush.eglil_launchericonlock;
+package com.ayusheg.launcherlock;
 
 import android.app.IntentService;
 import android.content.Intent;
 
-public class BackgroundRun extends IntentService {
+public class backgroundRun extends IntentService {
     // Must create a default constructor
-    public BackgroundRun() {
+    public backgroundRun() {
         // Used to name the worker thread, important only for debugging.
-        super("BackgroundRun");
+        super("backgroundRun");
     }
 
     @Override

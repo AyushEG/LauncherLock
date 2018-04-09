@@ -1,4 +1,4 @@
-package com.egayush.eglil_launchericonlock;
+package com.ayusheg.launcherlock;
 
 /**
  * Created by Ayush-EG on 6/25/2017.

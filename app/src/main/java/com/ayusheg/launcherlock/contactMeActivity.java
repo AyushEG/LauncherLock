@@ -1,9 +1,9 @@
-package com.egayush.eglil_launchericonlock;
+package com.ayusheg.launcherlock;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class ContactMeActivity extends AppCompatActivity {
+public class contactMeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
