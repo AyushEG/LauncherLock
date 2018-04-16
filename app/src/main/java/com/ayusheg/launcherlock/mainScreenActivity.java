@@ -15,7 +15,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -37,12 +36,12 @@ public class mainScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
 
-        AdView adview = (AdView) findViewById(R.id.adView);
-        AdView adview2 = (AdView) findViewById(R.id.adView2);
+        AdView mAdview = (AdView) findViewById(R.id.adView);
+        AdView mAdview2 = (AdView) findViewById(R.id.adView2);
 
-        AdRequest adRequest = new AdRequest.Builder()
-                .setRequestAgent("android_studio:ad_template").build();
-
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdview.loadAd(adRequest);
+        mAdview2.loadAd(adRequest);
         coordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinatorLayout);
 
         checkBox = (CheckBox) findViewById(R.id.checkBox);

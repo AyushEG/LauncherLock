@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LauncherLock</string>
-    <string name="admob_id">ca-app-pub-3940256099942544/63978111</string>
+    <string name="admob_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="email">egayush@gmail.com</string>
 </resources>

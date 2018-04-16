@@ -5,45 +5,50 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <receiver
-    android:name="com.ayusheg.launcherlock.onBootComplete"
-    android:enabled="true"
-    android:exported="false">
-    <intent-filter>
-        <action android:name="android.intent.action.BOOT_COMPLETED" />
-    </intent-filter>
-    <intent-filter>
-        <action android:name="android.intent.action.PACKAGE_REPLACED" />
-        <data android:scheme="package" />
-    </intent-filter>
-    <intent-filter>
-        <action android:name="android.intent.action.PACKAGE_ADDED" />
-        <data android:scheme="package" />
-    </intent-filter>
-        <activity android:name="com.google.android.gms.ads.AdActivity"/>
-</receiver>
-
+<supports-screens
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:xlargeScreens="true"/>
 <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="LauncherLock"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:resizeableActivity="false"
         android:theme="@style/AppTheme">
         <activity android:name="com.ayusheg.launcherlock.mainScreenActivity"
-            android:screenOrientation="portrait">
+        android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
+         </activity>
         <activity android:name="com.ayusheg.launcherlock.creditsActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+        </activity>
         <activity android:name="com.ayusheg.launcherlock.contactMeActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+        </activity>
         <service android:name="com.ayusheg.launcherlock.backgroundRun"/>
+        <activity android:name="com.google.android.gms.ads.AdActivity"/>
+    <receiver
+        android:name="com.ayusheg.launcherlock.onBootComplete"
+        android:enabled="true"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            <data android:scheme="package" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
 </application>
-
 </manifest>
