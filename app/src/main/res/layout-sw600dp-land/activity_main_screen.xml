@@ -83,11 +83,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         ads:adSize="BANNER"
         ads:adUnitId="@string/admob_id"
+        ads:layout_constraintEnd_toEndOf="@+id/textView2"
+        ads:layout_constraintHorizontal_bias="0.172"
+        ads:layout_constraintStart_toStartOf="@+id/checkBox"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.ads.AdView
@@ -97,10 +100,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="40dp"
         ads:adSize="BANNER"
         ads:adUnitId="@string/admob_id"
+        ads:layout_constraintEnd_toEndOf="@+id/textView2"
+        ads:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/checkBox"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
