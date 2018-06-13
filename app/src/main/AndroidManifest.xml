@@ -18,20 +18,15 @@
         android:supportsRtl="true"
         android:resizeableActivity="false"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ayusheg.launcherlock.mainScreenActivity"
-        android:screenOrientation="portrait">
+    <activity android:name=".mainScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
          </activity>
-        <activity android:name="com.ayusheg.launcherlock.creditsActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name="com.ayusheg.launcherlock.contactMeActivity"
-            android:screenOrientation="portrait">
-        </activity>
+    <activity android:name=".contactMeActivity"/>
+    <activity android:name=".creditsActivity"/>
         <service android:name="com.ayusheg.launcherlock.backgroundRun"/>
         <activity android:name="com.google.android.gms.ads.AdActivity"/>
     <receiver

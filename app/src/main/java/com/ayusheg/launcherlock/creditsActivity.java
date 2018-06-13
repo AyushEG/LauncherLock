@@ -1,5 +1,6 @@
 package com.ayusheg.launcherlock;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import com.google.android.gms.ads.AdRequest;
@@ -9,6 +10,8 @@ public class creditsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if(getResources().getBoolean(R.bool.portrait_only))
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
         AdView mAdview3 = (AdView) findViewById(R.id.adView3);

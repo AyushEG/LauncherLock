@@ -1,6 +1,7 @@
 package com.ayusheg.launcherlock;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
@@ -33,9 +34,10 @@ public class mainScreenActivity extends AppCompatActivity {
     }
 
     public void onCreate(Bundle savedInstanceState) {
+        if(getResources().getBoolean(R.bool.portrait_only))
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
-
         AdView mAdview = (AdView) findViewById(R.id.adView);
         AdView mAdview2 = (AdView) findViewById(R.id.adView2);
 

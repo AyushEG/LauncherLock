@@ -1,6 +1,7 @@
 package com.ayusheg.launcherlock;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,8 @@ public class contactMeActivity extends AppCompatActivity {
     private AdView mAdview6;
 
     protected void onCreate(Bundle savedInstanceState) {
+        if(getResources().getBoolean(R.bool.portrait_only))
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_me);
         AdView mAdview5 = (AdView) findViewById(R.id.adView5);
